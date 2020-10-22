@@ -33,6 +33,8 @@ body {
     background-image: url(img/pattern-bg.jpg);
     min-height: 100%;
     background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -48,6 +50,11 @@ body {
     padding: 0 14em 0 14em;
 }
 
+.problem {
+    background-color: orange;
+    min-height: 100%;
+}
+
 
 .headline {
     margin: auto;
@@ -59,18 +66,7 @@ body {
     font-size: 2.5em;
 }
 
-
-.jarallax {
-    position: relative;
-    z-index: 0;
-}
-.jarallax > .jarallax-img {
-    position: absolute;
-    object-fit: cover;
-    font-family: 'object-fit: cover;';
-    top: 0;
-    left: 0;
-    width: 100%;
+.panel {
     height: 100%;
-    z-index: -1;
+    width: 100%;
 }
