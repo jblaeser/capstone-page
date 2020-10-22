@@ -12,6 +12,7 @@ html {
 
 body {
     height: 100%;
+    color: #fff;
 }
 
 .content-container {
@@ -51,7 +52,7 @@ body {
 }
 
 .problem {
-    background-color: orange;
+    background-color: #faa950;
     min-height: 100%;
 }
 
@@ -62,11 +63,26 @@ body {
 
 .headline h2 {
     text-align: center;
-    color: #fff;
     font-size: 2.5em;
 }
 
 .panel {
     height: 100%;
     width: 100%;
+}
+
+.problem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.problemstatementtext {
+ margin: 0 auto;
+ padding: 0 10em;
+ font-size: 1.5em;
+}
+
+.problemstatementtext p {
+    padding: .6em;
 }
