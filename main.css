@@ -21,12 +21,14 @@ body {
 
 .nav-container {
     height: 85%;
-    width: 5%;
-    background-color: #444;
+    min-width: 5%;
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
+    background-image: url(img/nav-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
 
 }
 
@@ -42,20 +44,26 @@ body {
 }
 
 
-.hook {
+.hook, .research, .process, .summary {
     background-color: #a2cd48;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding: 0 14em 0 14em;
 }
 
-.problem {
+.problem, .solution, .deliverables  {
     background-color: #faa950;
     min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+
+.hook {
+    padding: 0 14em 0 14em;
+}
 
 .headline {
     margin: auto;
@@ -71,11 +79,6 @@ body {
     width: 100%;
 }
 
-.problem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
 
 .problemstatementtext {
  margin: 0 auto;
@@ -86,3 +89,5 @@ body {
 .problemstatementtext p {
     padding: .6em;
 }
+
+
