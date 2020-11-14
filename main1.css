@@ -1,0 +1,140 @@
+*, *:after, *:before {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+
+body {
+    height: 100%;
+    color: #fff;
+}
+
+.content-container {
+    height: 100%;
+}
+
+.nav-container {
+    height: 85%;
+    min-width: 5%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-image: url(img/nav-bg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+}
+
+.title {
+    background-image: url(img/pattern-bg.jpg);
+    min-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.logo-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo-container img {
+    margin: auto;
+    width: 45%;
+}
+
+
+.hook, .research, .process, .summary {
+    background-color: #a2cd48;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.problem, .solution, .deliverables  {
+    background-color: #faa950;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.endnotes {
+    background-image: url(img/pattern-bg.jpg);
+    min-height: 100%;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.hook {
+    padding: 0 14em 0 14em;
+}
+
+.headline {
+    margin: auto;
+}
+
+.headline h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin: auto;
+}
+
+.panel {
+    height: 100%;
+    width: 100%;
+}
+
+
+.problemstatementtext {
+ margin: 0 auto;
+ padding: 0 10em;
+ font-size: 1.5em;
+}
+
+.problemstatementtext p {
+    padding: .6em;
+}
+
+.endnotes {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#sketchbox {
+    border: 5px solid #faa950;
+    padding: 4em;
+    background-color: #fff;
+    width: 45%;
+    margin: auto;
+    color: #a2cd48;
+}
+
+
+
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
