@@ -71,6 +71,10 @@ body {
     justify-content: center;
 }
 
+.problem {
+    justify-content: center;
+}
+
 .endnotes {
     background-image: url(img/pattern-bg.jpg);
     min-height: 100%;
@@ -97,12 +101,15 @@ body {
 
 .problemstatementtext {
  margin: 0 auto;
- padding: 0 10em;
+ padding: 0 9em;
  font-size: 1.5em;
+
 }
 
 .problemstatementtext p {
-    padding: .6em;
+    padding: .75em;
+    font-size: 1.25em;
+    text-align: center;
 }
 
 .endnotes {
@@ -121,7 +128,6 @@ body {
 }
 
 
-
 #pinContainer {
     width: 100%;
     height: 100%;
@@ -133,6 +139,10 @@ body {
     position: absolute;
 }
 
+.three {
+    height: 160%;
+}
+
 .six {
     width: 200%;
 }
@@ -142,24 +152,35 @@ body {
 }
 
 
-#reveal1 {
+#reveal1, #reveal2 {
     opacity: 0;
     -webkit-transform: scale(0.9);
          -moz-transform: scale(0.9);
             -ms-transform: scale(0.9);
              -o-transform: scale(0.9);
                     transform: scale(0.9);
-    -webkit-transition: all 1s ease-in-out;
-         -moz-transition: all 1s ease-in-out;
-            -ms-transition: all 1s ease-in-out;
-             -o-transition: all 1s ease-in-out;
-                    transition: all 1s ease-in-out;
+    -webkit-transition: all .75s ease-in-out;
+         -moz-transition: all .75s ease-in-out;
+            -ms-transition: all .75s ease-in-out;
+             -o-transition: all .75s ease-in-out;
+                    transition: all .75s ease-in-out;
 }
-#reveal1.visible {
+#reveal1.visible, #reveal2.visible {
     opacity: 1;
     -webkit-transform: none;
          -moz-transform: none;
             -ms-transform: none;
              -o-transform: none;
                     transform: none;
+}
+
+.full-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center-image {
+    display: block;
+    margin: 0 auto;
 }
