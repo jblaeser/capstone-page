@@ -95,12 +95,6 @@ body {
     margin: auto;
 }
 
-.panel {
-    height: 100%;
-    width: 100%;
-}
-
-
 .problemstatementtext {
  margin: 0 auto;
  padding: 0 10em;
@@ -137,4 +131,8 @@ body {
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+.six {
+    width: 200%;
 }
