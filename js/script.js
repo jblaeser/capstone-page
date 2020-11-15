@@ -1,25 +1,52 @@
+$(window).on('beforeunload', function() {
+    $(window).scrollTop(0);
+ });
+
+
 $(function () { // wait for document ready
     // init
-    
-    var controller = new ScrollMagic.Controller({
-        globalSceneOptions: {
-            triggerHook: 'onLeave',
-            duration: "200%" // this works just fine with duration 0 as well
-            // However with large numbers (>20) of pinned sections display errors can occur so every section should be unpinned once it's covered by the next section.
-            // Normally 100% would work for this, but here 200% is used, as Panel 3 is shown for more than 100% of scrollheight due to the pause.
-        }
-    });
+    var controller = new ScrollMagic.Controller();
 
-    // get all slides
-    var slides = document.querySelectorAll("section.panel");
+    // define movement of panels
+    var wipeAnimation = new TimelineMax()
+        .fromTo("section.panel.two", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
+        .fromTo("section.panel.three",    1, {y:  "100%"}, {y: "-30%", ease: Linear.easeNone})  // in from right
+        .fromTo("section.panel.four", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
+        .fromTo("section.panel.five", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})  // in from left
+        .fromTo("section.panel.six",    1, {x:  "100%"}, {x: "-50%", ease: Linear.easeNone})  // in from right
+        .fromTo("section.panel.seven", 1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}) // in from top
+        .fromTo("section.panel.eight",    1, {y:  "100%"}, {y: "0%", ease: Linear.easeNone})  // in from right
+        .fromTo("section.panel.nine", 1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
 
-    // create scene for every slide
-    for (var i=0; i<slides.length; i++) {
+    // create scene to pin and link animation
+    new ScrollMagic.Scene({
+            triggerElement: "#pinContainer",
+            triggerHook: "onLeave",
+            duration: "600%"
+        })
+        
+        .setPin("#pinContainer")
+        .setTween(wipeAnimation)
+        .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
+
         new ScrollMagic.Scene({
-                triggerElement: slides[i]
-            })
-            .setPin(slides[i], {pushFollowers: false})
-          //  .addIndicators() // add indicators (requires plugin)
-            .addTo(controller);
-    }
+            triggerElement: "#trigger1",
+            triggerHook: 0.40, // show, when scrolled 10% into view
+            duration: "30%", // hide 10% before exiting view (80% + 10% from bottom)
+            offset: 50 // move trigger to center of element
+        })
+        .setClassToggle("#reveal1", "visible") // add class to reveal
+        .addTo(controller);
+
+        new ScrollMagic.Scene({
+            triggerElement: "#trigger2",
+            triggerHook: 0.65, // show, when scrolled 10% into view
+            duration: "30%", // hide 10% before exiting view (80% + 10% from bottom)
+            offset: 50 // move trigger to center of element
+        })
+        .setClassToggle("#reveal2", "visible") // add class to reveal
+        
+        .addTo(controller);
 });
+
