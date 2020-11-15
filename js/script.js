@@ -10,8 +10,8 @@ $(function () { // wait for document ready
     // define movement of panels
     var wipeAnimation = new TimelineMax()
         .fromTo("section.panel.two", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-        .fromTo("section.panel.three",1, {y:  "100%"}, {y: "-30%", ease: Linear.easeNone})  // in from right
-        .fromTo("section.panel.four",1, {y: "100%"}, {y: "-70%", ease: Linear.easeNone}) // in from top
+        .fromTo("section.panel.three",2, {y:  "100%"}, {y: "-30%", ease: Linear.easeNone})  // in from right
+        .fromTo("section.panel.four",3, {y: "100%"}, {y: "-70%", ease: Linear.easeNone}) // in from top
         .fromTo("section.panel.five",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone})  // in from left
         .fromTo("section.panel.six",1, {x:  "100%"}, {x: "-50%", ease: Linear.easeNone})  // in from right
         .fromTo("section.panel.seven",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}) // in from top
@@ -22,7 +22,7 @@ $(function () { // wait for document ready
     new ScrollMagic.Scene({
             triggerElement: "#pinContainer",
             triggerHook: "onLeave",
-            duration: "2000%"
+            duration: "1800%"
         })
         
         .setPin("#pinContainer")
