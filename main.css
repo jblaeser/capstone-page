@@ -164,7 +164,7 @@ p {
 }
 
 .five {
-    width: 600%;
+    width: 500%;
 }
 
 .six {
@@ -214,20 +214,15 @@ p {
     max-width: 100%;
     display: flex;
     flex-direction: row-reverse;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 .branding-text {
-    margin: 0 auto;
-    padding: 0 4em;
     font-size: 1.5em;
-
-    border: 2px solid red;
-    max-height: 100%;
+    flex-basis: 60vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    flex-basis: content;
 }
 
 .horizontalflex-img {
@@ -239,8 +234,7 @@ p {
 
 .img-container {
     max-height: 100%;
-    flex-basis: content;
-    border: 2px solid blue;
+    flex-basis: 75vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
