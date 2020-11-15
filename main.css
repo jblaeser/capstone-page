@@ -64,12 +64,17 @@ body {
 }
 
 
-.hook, .research, .process, .summary {
+.hook, .insight, .process, .summary {
     background-color: #a2cd48;
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+}
+
+.insight {
+    justify-content: space-around;
+    padding: 10em 0;
 }
 
 .problem, .solution, .deliverables  {
@@ -80,9 +85,6 @@ body {
     justify-content: center;
 }
 
-.problem {
-    justify-content: center;
-}
 
 .endnotes {
     background-image: url(img/pattern-bg.jpg);
@@ -109,13 +111,19 @@ body {
 }
 
 .problemstatementtext {
- margin: 0 auto;
- padding: 0 9em;
- font-size: 1.5em;
+    margin: 0 auto;
+    padding: 0 9em;
+    font-size: 1.5em;
 
 }
 
-.problemstatementtext p {
+.insighttext {
+    margin: 0 auto;
+    padding: 0 9em;
+    font-size: 1.5em;
+}
+
+p {
     padding: .75em;
     font-size: 1.25em;
     text-align: center;
@@ -152,6 +160,10 @@ body {
     height: 160%;
 }
 
+.four {
+    height: 200%;
+}
+
 .six {
     width: 200%;
 }
@@ -161,20 +173,20 @@ body {
 }
 
 
-#reveal1, #reveal2 {
+#reveal1, #reveal2, #reveal3, #reveal4, #reveal5 {
     opacity: 0;
     -webkit-transform: scale(0.9);
          -moz-transform: scale(0.9);
             -ms-transform: scale(0.9);
              -o-transform: scale(0.9);
                     transform: scale(0.9);
-    -webkit-transition: all .75s ease-in-out;
-         -moz-transition: all .75s ease-in-out;
-            -ms-transition: all .75s ease-in-out;
-             -o-transition: all .75s ease-in-out;
-                    transition: all .75s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+         -moz-transition: all .5s ease-in-out;
+            -ms-transition: all .5s ease-in-out;
+             -o-transition: all .5s ease-in-out;
+                    transition: all .5s ease-in-out;
 }
-#reveal1.visible, #reveal2.visible {
+#reveal1.visible, #reveal2.visible, #reveal3.visible, #reveal4.visible, #reveal5.visible {
     opacity: 1;
     -webkit-transform: none;
          -moz-transform: none;
