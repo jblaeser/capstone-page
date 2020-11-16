@@ -294,3 +294,15 @@ p {
 .tools-text li {
     padding-bottom: .1em;
 }
+
+.links a {
+    text-align: center;
+    text-decoration: none;
+    color: #faa950;
+    font-size: 2em;
+    padding: .2em;
+}
+
+.links a:hover {
+    color: #a2cd48;
+}
