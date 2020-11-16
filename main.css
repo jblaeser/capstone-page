@@ -279,3 +279,18 @@ p {
 .placeholder-img {
     margin: 0 auto;
 }
+
+.tools-text {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.tools-text h2 {
+    font-size: 2.5em;
+    padding-bottom: .2em;
+    letter-spacing: .05em;
+}
+
+.tools-text li {
+    padding-bottom: .1em;
+}
