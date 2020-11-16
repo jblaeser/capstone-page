@@ -77,7 +77,7 @@ body {
     padding: 10em 0;
 }
 
-.problem, .branding, .deliverables, .tools  {
+.problem, .branding, .book, .tools  {
     background-color: #faa950;
     height: 100%;
     display: flex;
@@ -168,11 +168,11 @@ p {
 }
 
 .six {
-    width: 600%;
+    width: 500%;
 }
 
 .seven {
-    width: 200%;
+    width: 600%;
 }
 
 
@@ -233,7 +233,6 @@ p {
 }
 
 .horizontalflex-img {
-    margin: 0 auto;
     max-width: 100%;
     max-height: 100%;
 }
@@ -244,4 +243,39 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.small-img {
+    max-height: 100%;
+    flex-basis: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.horizontal-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+
+.img-container-wide {
+    max-height: 100%;
+    flex-basis: 110vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.img-container-extrawide {
+    max-height: 100%;
+    flex-basis: 175vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.placeholder-img {
+    margin: 0 auto;
 }
