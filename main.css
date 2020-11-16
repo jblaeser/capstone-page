@@ -64,7 +64,7 @@ body {
 }
 
 
-.hook, .insight, .design, .summary {
+.hook, .insight, .design, .website {
     background-color: #a2cd48;
     height: 100%;
     display: flex;
@@ -173,6 +173,11 @@ p {
 
 .seven {
     width: 600%;
+}
+
+
+.eight {
+    width: 500%;
 }
 
 
@@ -305,4 +310,50 @@ p {
 
 .links a:hover {
     color: #a2cd48;
+}
+
+.main-carousel {
+    width: 100%;
+    min-height: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+  
+.carousel-cell {
+    width: 100%;
+    min-height: 100%;
+}
+
+.carousel-cell img {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.carousel-container {
+    height: 100%;
+    flex-basis: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.website-link {
+    max-height: 100%;
+    flex-basis: 75vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.website-link img {
+    border: 5px solid #faa950;
+}
+
+.website-link img:hover {
+    border: 5px dashed #faa950;
 }

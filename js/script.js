@@ -15,7 +15,7 @@ $(function () { // wait for document ready
         .fromTo("section.panel.five",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
         .fromTo("section.panel.six",1, {x:  "100%"}, {x: "-78%", ease: Linear.easeNone})  // in from right
         .fromTo("section.panel.seven",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}) // in from top
-        .fromTo("section.panel.eight",1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+        .fromTo("section.panel.eight",1, {x:  "100%"}, {x: "-79.5%", ease: Linear.easeNone})  // in from right
         .fromTo("section.panel.nine",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
         .fromTo("section.panel.ten",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
 
@@ -76,4 +76,21 @@ $(function () { // wait for document ready
         .setClassToggle("#reveal5", "visible") // add class to reveal
         .addTo(controller);
 });
+
+
+var elem = document.querySelectorAll('.main-carousel');
+for (var i=0, len = elem.length; i < len; i++) {
+    var carouselElem = elem[i];
+    new Flickity (carouselElem, {
+        cellAlign: 'center',
+        adaptiveHeight: true,
+        wrapAround: true,
+        percentPosition: false,
+        resize: true,
+    })
+    
+
+}
+
+
 
