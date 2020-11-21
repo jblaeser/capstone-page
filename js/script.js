@@ -1,6 +1,6 @@
-//$(window).on('beforeunload', function() {
-  //  $(window).scrollTop(0);
- //});
+$(window).on('beforeunload', function() {
+  $(window).scrollTop(0);
+ });
 
 
  //var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
@@ -11,7 +11,7 @@ $(function () { // wait for document ready
     var controller = new ScrollMagic.Controller();
 
     // define movement of panels
-    var wipeAnimation = new TimelineMax()
+    //var wipeAnimation = new TimelineMax()
          // in from top
          // in from left
          // in from right
@@ -25,7 +25,7 @@ $(function () { // wait for document ready
     var scene = new ScrollMagic.Scene({
         triggerElement: "#pinContainer",
         triggerHook: "onLeave",
-        duration: "1800%"
+        duration: "900%"
     })
     .setPin("#pinContainer")
     .addIndicators()
