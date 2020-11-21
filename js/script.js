@@ -115,8 +115,9 @@ $(function () { // wait for document ready
 
 
     
-    $('nav a').on('click',function() {
+    $('nav a').on('click',function(e) {
         controller.scrollTo($(this).attr('href')); 
+        e.preventDefault();
     });
 
 
@@ -175,9 +176,7 @@ $(function () { // wait for document ready
         .addTo(controller);
 
 
-        var targetSection = 2;
-        var targetPos = scene.scrollOffset() + (scene.duration()*(targetSection - 1));
-        controller.scrollTo(targetPos);
+
 });
 
 
