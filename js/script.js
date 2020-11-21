@@ -10,15 +10,6 @@ $(function () { // wait for document ready
     // init
     var controller = new ScrollMagic.Controller();
 
-    // define movement of panels
-    //var wipeAnimation = new TimelineMax()
-         // in from top
-         // in from left
-         // in from right
-         // in from top
-          // in from right
-        // in from top
-         // in from top
 
 
     // create scene to pin and link animation
@@ -114,11 +105,30 @@ $(function () { // wait for document ready
     .addTo(controller);
 
 
-    
-    $('nav a').on('click',function(e) {
+    controller.scrollTo(function (newpos) {
+		TweenMax.to(window, 2.0, {scrollTo: {y: newpos}});
+	});
+
+	//  bind scroll to anchor links
+	$(document).on("click", "a[href^='#']", function (e) {
+		var id = $(this).attr("href");
+		if ($(id).length > 0) {
+			e.preventDefault();
+
+			// trigger scroll
+            controller.scrollTo(id);
+            console.log(id);
+
+				// if supported by the browser we can even update the URL.
+			
+		}
+	});
+
+
+    /*$('nav a').on('click',function(e) {
         controller.scrollTo($(this).attr('href')); 
         e.preventDefault();
-    });
+    });*/
 
 
 
@@ -174,6 +184,8 @@ $(function () { // wait for document ready
         })
         .setClassToggle("#reveal5", "visible") // add class to reveal
         .addTo(controller);
+
+
 
 });
 
