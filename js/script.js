@@ -175,8 +175,6 @@ $(function () { // wait for document ready
         .setClassToggle("#reveal5", "visible") // add class to reveal
         .addTo(controller);
 
-
-
 });
 
 

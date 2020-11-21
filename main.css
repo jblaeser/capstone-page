@@ -16,6 +16,7 @@ html {
     box-sizing: border-box;
     height: 100%;
     font-family: 'gelpen', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -409,60 +410,6 @@ p {
 .links-link {
     background-image: url(img/nav-sprite9.png);
 }
-
-/*.target-link {
-    width: 100vw;
-    margin: 0 auto;
-    position: absolute;
-    top: 0;
-}
-
-#hook-target {
-    border: 1px solid turquoise;
-
-}
-
-#problem-target {
-    border: 1px solid yellow;
-
-}
-
-#solution-target {
-    border: 1px solid red;
-
-}
-
-#branding-target {
-    border: 1px solid black;
-    right: 0;
-
-}
-
-#design-target {
-    border: 1px solid lime;
-
-}
-
-#book-target {
-    right: 0;
-
-    border: 1px solid green;
-
-}
-
-#web-target {
-    border: 1px solid orange;
-
-}
-
-#tools-target {
-    border: 1px solid pink;
-
-}
-
-#links-target {
-    border: 1px solid blue;
-}*/
 
 
 #triggers {
