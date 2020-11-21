@@ -16,6 +16,7 @@ html {
     box-sizing: border-box;
     height: 100%;
     font-family: 'gelpen', sans-serif;
+    scroll-behavior: smooth;
 }
 
 
@@ -28,16 +29,21 @@ body {
     height: 100%;
 }
 
+
 .nav-container {
-    height: 85%;
-    min-width: 5%;
+    height: 88%;
+    min-width: 5em;
     position: fixed;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1;
     background-image: url(img/nav-bg.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position-y: top;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
 }
 
@@ -356,4 +362,103 @@ p {
 
 .website-link img:hover {
     border: 5px dashed #faa950;
+}
+
+.nav-link {
+    height: 3.65em;
+    width: 3.65em;
+    background-size: 100%;
+    margin-left: .5rem;
+}
+
+.nav-link:hover {
+    background-position-y: 100%;
+}
+
+.hook-link {
+    background-image: url(img/nav-sprite.png);
+}
+
+.problem-link {
+    background-image: url(img/nav-sprite2.png);
+}
+
+.solution-link {
+    background-image: url(img/nav-sprite3.png);
+}
+
+.branding-link {
+    background-image: url(img/nav-sprite4.png);
+}
+
+.design-link {
+    background-image: url(img/nav-sprite5.png);
+}
+
+.book-link {
+    background-image: url(img/nav-sprite6.png);
+}
+
+.web-link {
+    background-image: url(img/nav-sprite7.png);
+}
+
+.tools-link {
+    background-image: url(img/nav-sprite8.png);
+}
+
+.links-link {
+    background-image: url(img/nav-sprite9.png);
+}
+
+.target-link {
+    width: 100vw;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+}
+
+#hook-target {
+    border: 1px solid turquoise;
+
+}
+
+#problem-target {
+    border: 1px solid yellow;
+
+}
+
+#solution-target {
+    border: 1px solid red;
+
+}
+
+#branding-target {
+    border: 1px solid black;
+
+}
+
+#design-target {
+    border: 1px solid lime;
+
+}
+
+#book-target {
+
+    border: 1px solid green;
+
+}
+
+#web-target {
+    border: 1px solid orange;
+
+}
+
+#tools-target {
+    border: 1px solid pink;
+
+}
+
+#links-target {
+    border: 1px solid blue;
 }
