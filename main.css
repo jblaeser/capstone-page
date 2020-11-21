@@ -410,7 +410,7 @@ p {
     background-image: url(img/nav-sprite9.png);
 }
 
-.target-link {
+/*.target-link {
     width: 100vw;
     margin: 0 auto;
     position: absolute;
@@ -462,4 +462,49 @@ p {
 
 #links-target {
     border: 1px solid blue;
+}*/
+
+
+#triggers {
+    position: absolute;
+    height: 100%;
+}
+#triggers div {
+    position: absolute;
+}
+#triggers #t1 {
+    top: 0;
+}
+#triggers #t2 {
+    top: 100%;
+}
+#triggers #t3 {
+    top: 200%;
+}
+#triggers #t4 {
+    top: 300%;
+}
+
+#triggers #t5 {
+    top: 400%;
+}
+
+#triggers #t6 {
+    top: 500%;
+}
+
+#triggers #t7 {
+    top: 600%;
+}
+
+#triggers #t8 {
+    top: 700%;
+}
+
+#triggers #t9 {
+    top: 800%;
+}
+
+#triggers #t10 {
+    top: 900%;
 }

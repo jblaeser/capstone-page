@@ -3,35 +3,130 @@
  //});
 
 
+ //var scrollPos = window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop;
+
+
 $(function () { // wait for document ready
     // init
     var controller = new ScrollMagic.Controller();
 
-    
-
     // define movement of panels
     var wipeAnimation = new TimelineMax()
-        .fromTo("section.panel.two", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-        .fromTo("section.panel.three",2, {y:  "100%"}, {y: "-30%", ease: Linear.easeNone})  // in from right
-        .fromTo("section.panel.four",3, {y: "100%"}, {y: "-70%", ease: Linear.easeNone}) // in from top
-        .fromTo("section.panel.five",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
-        .fromTo("section.panel.six",1, {x:  "100%"}, {x: "-78%", ease: Linear.easeNone})  // in from right
-        .fromTo("section.panel.seven",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}) // in from top
-        .fromTo("section.panel.eight",1, {x:  "100%"}, {x: "-79.5%", ease: Linear.easeNone})  // in from right
-        .fromTo("section.panel.nine",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}) // in from top
-        .fromTo("section.panel.ten",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}); // in from top
+         // in from top
+         // in from left
+         // in from right
+         // in from top
+          // in from right
+        // in from top
+         // in from top
 
 
     // create scene to pin and link animation
+    var scene = new ScrollMagic.Scene({
+        triggerElement: "#pinContainer",
+        triggerHook: "onLeave",
+        duration: "1800%"
+    })
+    .setPin("#pinContainer")
+    .addIndicators()
+    .addTo(controller); // add indicators (requires plugin)
+
     new ScrollMagic.Scene({
-            triggerElement: "#pinContainer",
-            triggerHook: "onLeave",
-            duration: "1800%"
-        })
-        
-        .setPin("#pinContainer")
-        .setTween(wipeAnimation)
-        .addTo(controller);
+        triggerElement: "#triggers #t1",
+        triggerHook: "onLeave",
+        duration: "100%"
+    })
+    .setTween(TweenMax.fromTo("section.panel.two", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}))
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+
+    new ScrollMagic.Scene({
+        triggerElement: "#triggers #t2",
+        triggerHook: "onLeave",
+        duration: "100%"
+    })
+    .setTween(TweenMax.fromTo("section.panel.three", 1, {y: "100%"}, {y: "-30%", ease: Linear.easeNone}))
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: "#triggers #t3",
+        triggerHook: "onLeave",
+        duration: "100%"
+    })
+    .setTween(TweenMax.fromTo("section.panel.four",3, {y: "100%"}, {y: "-70%", ease: Linear.easeNone}))
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: "#triggers #t4",
+        triggerHook: "onLeave",
+        duration: "100%"
+    })
+    .setTween(TweenMax.fromTo("section.panel.five",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}) )
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: "#triggers #t5",
+        triggerHook: "onLeave",
+        duration: "100%"
+    })
+    .setTween(TweenMax.fromTo("section.panel.six",1, {x:  "100%"}, {x: "-78%", ease: Linear.easeNone}))
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: "#triggers #t6",
+        triggerHook: "onLeave",
+        duration: "100%"
+    })
+    .setTween(TweenMax.fromTo("section.panel.seven",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}))
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+    
+    new ScrollMagic.Scene({
+        triggerElement: "#triggers #t7",
+        triggerHook: "onLeave",
+        duration: "100%"
+    })
+    .setTween(TweenMax.fromTo("section.panel.eight",1, {x:  "100%"}, {x: "-79.5%", ease: Linear.easeNone}))
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: "#triggers #t8",
+        triggerHook: "onLeave",
+        duration: "100%"
+    })
+    .setTween(TweenMax.fromTo("section.panel.nine",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}))
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+    new ScrollMagic.Scene({
+        triggerElement: "#triggers #t9",
+        triggerHook: "onLeave",
+        duration: "100%"
+    })
+    .setTween(TweenMax.fromTo("section.panel.ten",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}))
+    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+
+    
+    $('nav a').on('click',function() {
+        controller.scrollTo($(this).attr('href')); 
+    });
+
+
+
+
+
+
+
+
+
 
 
         new ScrollMagic.Scene({
@@ -78,6 +173,11 @@ $(function () { // wait for document ready
         })
         .setClassToggle("#reveal5", "visible") // add class to reveal
         .addTo(controller);
+
+
+        var targetSection = 2;
+        var targetPos = scene.scrollOffset() + (scene.duration()*(targetSection - 1));
+        controller.scrollTo(targetPos);
 });
 
 
@@ -94,6 +194,8 @@ for (var i=0, len = elem.length; i < len; i++) {
     
 
 }
+
+
 
 
 
