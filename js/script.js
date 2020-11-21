@@ -7,6 +7,8 @@ $(function () { // wait for document ready
     // init
     var controller = new ScrollMagic.Controller();
 
+    
+
     // define movement of panels
     var wipeAnimation = new TimelineMax()
         .fromTo("section.panel.two", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone})  // in from left
@@ -30,6 +32,7 @@ $(function () { // wait for document ready
         .setPin("#pinContainer")
         .setTween(wipeAnimation)
         .addTo(controller);
+
 
         new ScrollMagic.Scene({
             triggerElement: "#trigger1",

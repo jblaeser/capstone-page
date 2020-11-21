@@ -16,7 +16,6 @@ html {
     box-sizing: border-box;
     height: 100%;
     font-family: 'gelpen', sans-serif;
-    scroll-behavior: smooth;
 }
 
 
@@ -435,6 +434,7 @@ p {
 
 #branding-target {
     border: 1px solid black;
+    right: 0;
 
 }
 
@@ -444,6 +444,7 @@ p {
 }
 
 #book-target {
+    right: 0;
 
     border: 1px solid green;
 
