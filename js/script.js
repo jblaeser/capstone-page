@@ -49,7 +49,7 @@ $(function () { // wait for document ready
     new ScrollMagic.Scene({
         triggerElement: "#triggers #t4",
         triggerHook: "onLeave",
-        duration: "100%"
+        duration: "143%"
     })
     .setTween(TweenMax.fromTo("section.panel.five",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}) )
     .addTo(controller);
@@ -65,7 +65,7 @@ $(function () { // wait for document ready
     new ScrollMagic.Scene({
         triggerElement: "#triggers #t6",
         triggerHook: "onLeave",
-        duration: "100%"
+        duration: "143%"
     })
     .setTween(TweenMax.fromTo("section.panel.seven",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}))
     .addTo(controller);
@@ -160,7 +160,7 @@ $(function () { // wait for document ready
 
         if (id === "#t5") {
             e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .8)}})
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .822)}})
         }
 
         if (id === "#t6") {
@@ -170,7 +170,7 @@ $(function () { // wait for document ready
 
         if (id === "#t7") {
             e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .8615)}})
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .8735)}})
         }
         
         if (id === "#t8") {
