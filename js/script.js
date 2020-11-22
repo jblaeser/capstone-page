@@ -19,8 +19,7 @@ $(function () { // wait for document ready
         duration: "900%"
     })
     .setPin("#pinContainer")
-    .addIndicators()
-    .addTo(controller); // add indicators (requires plugin)
+    .addTo(controller); 
 
     new ScrollMagic.Scene({
         triggerElement: "#triggers #t1",
@@ -28,7 +27,6 @@ $(function () { // wait for document ready
         duration: "100%"
     })
     .setTween(TweenMax.fromTo("section.panel.two", 1, {x: "100%"}, {x: "0%", ease: Linear.easeNone}))
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
 
@@ -38,7 +36,6 @@ $(function () { // wait for document ready
         duration: "100%"
     })
     .setTween(TweenMax.fromTo("section.panel.three", 1, {y: "100%"}, {y: "-30%", ease: Linear.easeNone}))
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -47,7 +44,6 @@ $(function () { // wait for document ready
         duration: "100%"
     })
     .setTween(TweenMax.fromTo("section.panel.four",3, {y: "100%"}, {y: "-70%", ease: Linear.easeNone}))
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -56,7 +52,6 @@ $(function () { // wait for document ready
         duration: "100%"
     })
     .setTween(TweenMax.fromTo("section.panel.five",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}) )
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -65,7 +60,6 @@ $(function () { // wait for document ready
         duration: "100%"
     })
     .setTween(TweenMax.fromTo("section.panel.six",1, {x:  "100%"}, {x: "-78%", ease: Linear.easeNone}))
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -74,7 +68,6 @@ $(function () { // wait for document ready
         duration: "100%"
     })
     .setTween(TweenMax.fromTo("section.panel.seven",1, {x: "-100%"}, {x: "0%", ease: Linear.easeNone}))
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
     
     new ScrollMagic.Scene({
@@ -83,7 +76,6 @@ $(function () { // wait for document ready
         duration: "100%"
     })
     .setTween(TweenMax.fromTo("section.panel.eight",1, {x:  "100%"}, {x: "-79.5%", ease: Linear.easeNone}))
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -92,7 +84,6 @@ $(function () { // wait for document ready
         duration: "100%"
     })
     .setTween(TweenMax.fromTo("section.panel.nine",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}))
-    .addIndicators() // add indicators (requires plugin)
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -101,28 +92,50 @@ $(function () { // wait for document ready
         duration: "100%"
     })
     .setTween(TweenMax.fromTo("section.panel.ten",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}))
-    .addIndicators() // add indicators (requires plugin)
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t2",
+    })
+    .setClassToggle(".hook-link", "active") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t3"})
+    .setClassToggle(".hook-link", "active") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t3"})
+    .setClassToggle(".problem-link", "active") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t4"})
+    .setClassToggle(".solution-link", "active") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t5",offset: -310, })
+    .setClassToggle(".branding-link", "active") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t6", offset: 10, })
+    .setClassToggle(".design-link", "active") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t7", offset: -310, })
+    .setClassToggle(".book-link", "active") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t8", offset: 10, })
+    .setClassToggle(".web-link", "active") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t9"})
+    .setClassToggle(".tools-link", "active") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t10"})
+    .setClassToggle(".links-link", "active") // add class toggle
     .addTo(controller);
 
 
-   /* controller.scrollTo(function (newpos) {
-		TweenMax.to(window, 2.0, {scrollTo: {y: newpos}});
-	});
-
-	//  bind scroll to anchor links
-	/*$(document).on("click", "a[href^='#']", function (e) {
-		var id = $(this).attr("href");
-		if ($(id).length > 0) {
-			e.preventDefault();
-
-			// trigger scroll
-            controller.scrollTo(id);
-            console.log(id);
-
-				// if supported by the browser we can even update the URL.
-			
-		}
-    });*/
     
     $(document).on("click", "a[href^='#']", function (e) {
         var id      = $(this).attr("href"),

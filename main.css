@@ -165,7 +165,7 @@ p {
 }
 
 .four {
-    height: 270%;
+    height: 200%;
 }
 
 .five {
@@ -374,6 +374,10 @@ p {
     background-position-y: 100%;
 }
 
+.active {
+    background-position-y: 100%;
+}
+
 .hook-link {
     background-image: url(img/nav-sprite.png);
 }
@@ -409,8 +413,6 @@ p {
 .links-link {
     background-image: url(img/nav-sprite9.png);
 }
-
-
 
 
 #triggers {
