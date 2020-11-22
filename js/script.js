@@ -94,8 +94,7 @@ $(function () { // wait for document ready
     .setTween(TweenMax.fromTo("section.panel.ten",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}))
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t2",
-    })
+    new ScrollMagic.Scene({triggerElement: "#t2"})
     .setClassToggle(".hook-link", "active") // add class toggle
     .addTo(controller);
 
