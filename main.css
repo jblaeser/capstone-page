@@ -140,9 +140,10 @@ p {
 }
 
 #sketchbox {
-    border: 5px solid #faa950;
+    background-image: url(img/links-box.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     padding: 4em;
-    background-color: #fff;
     width: 45%;
     margin: auto;
     color: #a2cd48;
