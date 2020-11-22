@@ -105,12 +105,12 @@ $(function () { // wait for document ready
     .addTo(controller);
 
 
-    controller.scrollTo(function (newpos) {
+   /* controller.scrollTo(function (newpos) {
 		TweenMax.to(window, 2.0, {scrollTo: {y: newpos}});
 	});
 
 	//  bind scroll to anchor links
-	$(document).on("click", "a[href^='#']", function (e) {
+	/*$(document).on("click", "a[href^='#']", function (e) {
 		var id = $(this).attr("href");
 		if ($(id).length > 0) {
 			e.preventDefault();
@@ -122,12 +122,83 @@ $(function () { // wait for document ready
 				// if supported by the browser we can even update the URL.
 			
 		}
-	});
+    });*/
+    
+    $(document).on("click", "a[href^='#']", function (e) {
+        var id      = $(this).attr("href"),
+            $elem   = $(id)
+            offset = $elem.offset().top
+            
+
+        if (id === "#t2") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * 1.0)}})
+        }
+
+        if (id === "#t3") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .9)}})
+        }
+
+        if (id === "#t4") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .87)}})
+        }
+
+        if (id === "#t5") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .8)}})
+        }
+
+        if (id === "#t6") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .913)}})
+        }
+
+        if (id === "#t7") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .8615)}})
+        }
+        
+        if (id === "#t8") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .9368)}})
+        }
+        if (id === "#t9") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * 1.0)}})
+        }
+
+        if (id === "#t10") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * 1.0)}})
+        }
+
+    });
+
+
 
 
     /*$('nav a').on('click',function(e) {
         controller.scrollTo($(this).attr('href')); 
         e.preventDefault();
+
+
+                if (id === "#t2") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y:$elem}})
+
+            console.log(id);
+
+        }
+
+        if (id === "#t3") {
+            e.preventDefault()
+            TweenMax.to(window, 2.0, {scrollTo: {y:$elem, offsetY:160}})
+
+            console.log(id);
+
+        }
     });*/
 
 
