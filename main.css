@@ -28,22 +28,25 @@ body {
     height: 100%;
 }
 
+nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+}
 
 .nav-container {
-    height: 88%;
-    min-width: 5em;
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
+    height: 85vh;
+    width: 12vh;
     background-image: url(img/nav-bg.png);
-    background-size: cover;
-    background-position-y: top;
+    background-size: 100% 143%;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
+    padding: 2em .1em;
 }
 
 .title {
@@ -365,10 +368,10 @@ p {
 }
 
 .nav-link {
-    height: 3.65em;
-    width: 3.65em;
-    background-size: 100%;
-    margin-left: .4rem;
+    width: 10vh;
+    height: 10vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .nav-link:hover {
