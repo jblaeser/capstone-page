@@ -14,13 +14,13 @@
 
 html {
     box-sizing: border-box;
-    height: 100vh;
+    height: 100%;
     font-family: 'gelpen', sans-serif;
 }
 
 
 body {
-    height: 100vh;
+    height: 100%;
     color: #fff;
 }
 
