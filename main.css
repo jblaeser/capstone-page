@@ -38,7 +38,7 @@ nav {
 }
 
 .nav-container {
-    height: 85vh;
+    min-height: 85vh;
     width: 12vh;
     background-image: url(img/nav-bg.png);
     background-size: 100% 143%;
@@ -46,7 +46,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 2.25em .1em;
+    padding: 2.5vh .25vh;
 }
 
 .title {
