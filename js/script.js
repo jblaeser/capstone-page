@@ -94,39 +94,37 @@ $(function () { // wait for document ready
     .setTween(TweenMax.fromTo("section.panel.ten",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}))
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t2"})
+    new ScrollMagic.Scene({triggerElement: "#t2", duration:766})
     .setClassToggle(".hook-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t3"})
-    .setClassToggle(".hook-link", "active") // add class toggle
-    .addTo(controller);
+  
 
-    new ScrollMagic.Scene({triggerElement: "#t3"})
+    new ScrollMagic.Scene({triggerElement: "#t3", duration: 770})
     .setClassToggle(".problem-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t4"})
+    new ScrollMagic.Scene({triggerElement: "#t4", duration: 460})
     .setClassToggle(".solution-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t5",offset: -310, })
+    new ScrollMagic.Scene({triggerElement: "#t5",offset: -310, duration: 1080})
     .setClassToggle(".branding-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t6", offset: 10, })
+    new ScrollMagic.Scene({triggerElement: "#t6", offset: 10, duration: 450 })
     .setClassToggle(".design-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t7", offset: -310, })
+    new ScrollMagic.Scene({triggerElement: "#t7", offset: -310, duration: 1080 })
     .setClassToggle(".book-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t8", offset: 10, })
+    new ScrollMagic.Scene({triggerElement: "#t8", offset: 10, duration: 715 })
     .setClassToggle(".web-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t9"})
+    new ScrollMagic.Scene({triggerElement: "#t9", duration: 750})
     .setClassToggle(".tools-link", "active") // add class toggle
     .addTo(controller);
 
