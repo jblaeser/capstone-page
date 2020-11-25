@@ -46,7 +46,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 2em .1em;
+    padding: 2.25em .1em;
 }
 
 .title {
