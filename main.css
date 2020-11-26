@@ -110,7 +110,7 @@ nav {
 
 .headline h2 {
     text-align: center;
-    font-size: 2.75em;
+    font-size: 2.75rem;
     margin: auto;
 }
 
@@ -459,3 +459,52 @@ p {
 #triggers #t10 {
     top: 900%;
 }
+
+.scroll-indicator {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.scroll-words {
+    width: 8vw;
+    height: 4vw;
+    background-image: url(img/scroll-message.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 3vh;
+}
+
+
+.arrow-container {
+    margin: 0 auto;
+
+}
+
+.downarrow {
+    width:6vw;
+    height: 6vw;
+    background-image: url(img/down-arrow.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: bounce 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+}
+  
+  @keyframes bounce {
+  50% {
+      transform: translateY(-15px);
+    }
+  }
+  
+  .scroll-done {
+      background-position: bottom;
+  }
+
+  .hidden {
+      visibility: hidden;
+  }

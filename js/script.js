@@ -132,6 +132,13 @@ $(function () { // wait for document ready
     .setClassToggle(".links-link", "active") // add class toggle
     .addTo(controller);
 
+    new ScrollMagic.Scene({triggerElement: "#t10", offset: 330})
+    .setClassToggle(".scroll-words", "scroll-done") // add class toggle
+    .addTo(controller);
+
+    new ScrollMagic.Scene({triggerElement: "#t10", offset: 330})
+    .setClassToggle(".arrow-container", "hidden") // add class toggle
+    .addTo(controller);
 
     
     $(document).on("click", "a[href^='#']", function (e) {
