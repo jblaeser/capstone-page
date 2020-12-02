@@ -260,7 +260,7 @@ $(function () { // wait for document ready
         new ScrollMagic.Scene({
             triggerElement: "#trigger4",
             triggerHook: 0.50, // show, when scrolled 10% into view
-            duration: "30%", // hide 10% before exiting view (80% + 10% from bottom)
+            duration: "40%", // hide 10% before exiting view (80% + 10% from bottom)
             offset: 50 // move trigger to center of element
         })
         .setClassToggle("#reveal4", "visible") // add class to reveal
