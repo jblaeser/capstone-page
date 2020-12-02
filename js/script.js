@@ -100,31 +100,31 @@ $(function () { // wait for document ready
 
   
 
-    new ScrollMagic.Scene({triggerElement: "#t3", duration: 770})
+    new ScrollMagic.Scene({triggerElement: "#t3", duration: 731})
     .setClassToggle(".problem-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t4", duration: 460})
+    new ScrollMagic.Scene({triggerElement: "#t4", offset: -35, duration: 531})
     .setClassToggle(".solution-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t5",offset: -310, duration: 1080})
+    new ScrollMagic.Scene({triggerElement: "#t5",offset: -270, duration: 1046})
     .setClassToggle(".branding-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t6", offset: 10, duration: 450 })
+    new ScrollMagic.Scene({triggerElement: "#t6", offset: 10, duration: 467 })
     .setClassToggle(".design-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t7", offset: -310, duration: 1080 })
+    new ScrollMagic.Scene({triggerElement: "#t7", offset: -290, duration: 1066 })
     .setClassToggle(".book-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t8", offset: 10, duration: 715 })
+    new ScrollMagic.Scene({triggerElement: "#t8", offset: 10, duration: 756 })
     .setClassToggle(".web-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t9", duration: 750})
+    new ScrollMagic.Scene({triggerElement: "#t9", duration: 766})
     .setClassToggle(".tools-link", "active") // add class toggle
     .addTo(controller);
 
@@ -176,7 +176,7 @@ $(function () { // wait for document ready
 
         if (id === "#t7") {
             e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .8735)}})
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .8749)}})
         }
         
         if (id === "#t8") {
@@ -194,36 +194,6 @@ $(function () { // wait for document ready
         }
 
     });
-
-
-
-
-    /*$('nav a').on('click',function(e) {
-        controller.scrollTo($(this).attr('href')); 
-        e.preventDefault();
-
-
-                if (id === "#t2") {
-            e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y:$elem}})
-
-            console.log(id);
-
-        }
-
-        if (id === "#t3") {
-            e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y:$elem, offsetY:160}})
-
-            console.log(id);
-
-        }
-    });*/
-
-
-
-
-
 
 
 
