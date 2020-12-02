@@ -141,6 +141,8 @@ $(function () { // wait for document ready
     .addTo(controller);
 
     
+
+    
     $(document).on("click", "a[href^='#']", function (e) {
         var id      = $(this).attr("href"),
             $elem   = $(id)
@@ -249,7 +251,7 @@ $(function () { // wait for document ready
         new ScrollMagic.Scene({
             triggerElement: "#trigger3",
             triggerHook: 0.65, // show, when scrolled 10% into view
-            duration: "40%", // hide 10% before exiting view (80% + 10% from bottom)
+            duration: "50%", // hide 10% before exiting view (80% + 10% from bottom)
             offset: 50 // move trigger to center of element
         })
         .setClassToggle("#reveal3", "visible") // add class to reveal
