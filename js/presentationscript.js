@@ -43,7 +43,7 @@ $(function () { // wait for document ready
         triggerHook: "onLeave",
         duration: "100%"
     })
-    .setTween(TweenMax.fromTo("section.panel.four",3, {y: "100%"}, {y: "-79%", ease: Linear.easeNone}))
+    .setTween(TweenMax.fromTo("section.panel.four",3, {y: "100%"}, {y: "-77%", ease: Linear.easeNone}))
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -91,40 +91,40 @@ $(function () { // wait for document ready
         triggerHook: "onLeave",
         duration: "100%"
     })
-    .setTween(TweenMax.fromTo("section.panel.ten",1, {y: "100%"}, {y: "0%", ease: Linear.easeNone}))
+    .setTween(TweenMax.fromTo("section.panel.ten",1, {y: "100%"}, {y: "-69%", ease: Linear.easeNone}))
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t2", duration:766})
+    new ScrollMagic.Scene({triggerElement: "#t2", duration:900})
     .setClassToggle(".hook-link", "active") // add class toggle
     .addTo(controller);
 
   
 
-    new ScrollMagic.Scene({triggerElement: "#t3", duration: 731})
+    new ScrollMagic.Scene({triggerElement: "#t3", duration: 865})
     .setClassToggle(".problem-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t4", offset: -35, duration: 531})
+    new ScrollMagic.Scene({triggerElement: "#t4", offset: -35, duration: 665})
     .setClassToggle(".solution-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t5",offset: -270, duration: 1046})
+    new ScrollMagic.Scene({triggerElement: "#t5",offset: -270, duration: 1180})
     .setClassToggle(".branding-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t6", offset: 10, duration: 467 })
+    new ScrollMagic.Scene({triggerElement: "#t6", offset: 10, duration: 520 })
     .setClassToggle(".design-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t7", offset: -290, duration: 1066 })
+    new ScrollMagic.Scene({triggerElement: "#t7", offset: -370, duration: 1280 })
     .setClassToggle(".book-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t8", offset: 10, duration: 756 })
+    new ScrollMagic.Scene({triggerElement: "#t8", offset: 10, duration: 890 })
     .setClassToggle(".web-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t9", duration: 766})
+    new ScrollMagic.Scene({triggerElement: "#t9", duration: 900})
     .setClassToggle(".tools-link", "active") // add class toggle
     .addTo(controller);
 
@@ -132,11 +132,11 @@ $(function () { // wait for document ready
     .setClassToggle(".links-link", "active") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t10", offset: 330})
+    new ScrollMagic.Scene({triggerElement: "#t10", offset: 440})
     .setClassToggle(".scroll-words", "scroll-done") // add class toggle
     .addTo(controller);
 
-    new ScrollMagic.Scene({triggerElement: "#t10", offset: 330})
+    new ScrollMagic.Scene({triggerElement: "#t10", offset: 440})
     .setClassToggle(".arrow-container", "hidden") // add class toggle
     .addTo(controller);
 
@@ -190,7 +190,7 @@ $(function () { // wait for document ready
 
         if (id === "#t10") {
             e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * 1.0)}})
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .9585)}})
         }
 
     });

@@ -91,12 +91,10 @@ nav {
 }
 
 .endnotes {
-    background-image: url(img/pattern-bg.jpg);
+    background-color: #a2cd48;
     min-height: 100%;
     max-width: 100%;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
 }
 
 
@@ -184,6 +182,11 @@ p {
 
 .eight {
     width: 400vw;
+}
+
+.ten {
+
+    height: 370vh;
 }
 
 
@@ -403,11 +406,11 @@ p {
 }
 
 .tools-link {
-    background-image: url(img/nav-sprite8.png);
+    background-image: url(img/pres-sprite.png);
 }
 
 .links-link {
-    background-image: url(img/nav-sprite9.png);
+    background-image: url(img/pres-sprite2.png);
 }
 
 
@@ -556,4 +559,21 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.endtextimage {
+    margin: 0 auto;
+    max-height: 70%;
+    max-width: 70%;
+    display: block;
+}
+
+.headertext-end {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(img/pattern-bg.jpg);
+    background-size: 100% auto;
+    background-position: bottom;
 }
