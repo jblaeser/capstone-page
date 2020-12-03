@@ -577,3 +577,9 @@ p {
     background-size: 100% auto;
     background-position: bottom;
 }
+
+.claps {
+    position: absolute;
+    bottom: 5%;
+    left: 7%;
+}
