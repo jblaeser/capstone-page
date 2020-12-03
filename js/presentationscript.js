@@ -43,7 +43,7 @@ $(function () { // wait for document ready
         triggerHook: "onLeave",
         duration: "100%"
     })
-    .setTween(TweenMax.fromTo("section.panel.four",3, {y: "100%"}, {y: "-70%", ease: Linear.easeNone}))
+    .setTween(TweenMax.fromTo("section.panel.four",3, {y: "100%"}, {y: "-79%", ease: Linear.easeNone}))
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -59,7 +59,7 @@ $(function () { // wait for document ready
         triggerHook: "onLeave",
         duration: "100%"
     })
-    .setTween(TweenMax.fromTo("section.panel.six",1, {x:  "100%"}, {x: "-78%", ease: Linear.easeNone}))
+    .setTween(TweenMax.fromTo("section.panel.six",1, {x:  "100%"}, {x: "-80%", ease: Linear.easeNone}))
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -75,7 +75,7 @@ $(function () { // wait for document ready
         triggerHook: "onLeave",
         duration: "100%"
     })
-    .setTween(TweenMax.fromTo("section.panel.eight",1, {x:  "100%"}, {x: "-79.5%", ease: Linear.easeNone}))
+    .setTween(TweenMax.fromTo("section.panel.eight",1, {x:  "100%"}, {x: "-75%", ease: Linear.easeNone}))
     .addTo(controller);
 
     new ScrollMagic.Scene({
@@ -161,27 +161,27 @@ $(function () { // wait for document ready
 
         if (id === "#t4") {
             e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .87)}})
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .88)}})
         }
 
         if (id === "#t5") {
             e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .822)}})
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .852)}})
         }
 
         if (id === "#t6") {
             e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .913)}})
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .9165)}})
         }
 
         if (id === "#t7") {
             e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .8749)}})
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .869)}})
         }
         
         if (id === "#t8") {
             e.preventDefault()
-            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .9368)}})
+            TweenMax.to(window, 2.0, {scrollTo: {y: offset, offsetY: offset - (offset * .942)}})
         }
         if (id === "#t9") {
             e.preventDefault()
@@ -220,8 +220,8 @@ $(function () { // wait for document ready
 
         new ScrollMagic.Scene({
             triggerElement: "#trigger3",
-            triggerHook: 0.65, // show, when scrolled 10% into view
-            duration: "50%", // hide 10% before exiting view (80% + 10% from bottom)
+            triggerHook: 0.35, // show, when scrolled 10% into view
+            duration: "60%", // hide 10% before exiting view (80% + 10% from bottom)
             offset: 50 // move trigger to center of element
         })
         .setClassToggle("#reveal3", "visible") // add class to reveal
